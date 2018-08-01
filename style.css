@@ -14,7 +14,6 @@ body {
   /* font-family: Helvetica, Arial, sans-serif; */
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
-  width: 100%;
 }
 
 #container {
@@ -25,15 +24,24 @@ header {
   background: url('images/header_bg.jpg') no-repeat;
   background-size: cover;
   height: 500px;
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
+
+/* .relaxr-box {
+  width: 700px;
+} */
 
 header h1 {
   font-weight: bolder;
   font-size: 24px;
   color: #ffffff;
-  padding: 30px 0 0 500px;
   text-align: left;
   font-family: 'Merriweather Sans', sans-serif;
+  /* width: 700px; */
 }
 
 header h2 {
@@ -56,33 +64,36 @@ header button {
 
 .benefits {
   background-color: #f0efef;
+  width: 100%;
   height: 400px;
-  padding: 80px 0 70px 0;
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
-.benefits h1 {
+/* .benefits-box {
+  width: 700px;
+} */
+
+.benefits-box h1 {
   font-weight: bold;
   font-size: 20px;
   color: #033048;
-  padding-left: 500px;
   text-align: left;
+  /* width: 700px; */
 }
 
-.benefits p {
+.benefits-box p {
   font-weight: lighter;
   font-size: 13px;
-  padding-left: 500px;
-  text-align: left;
   margin: 20px 0;
-}
-
-.benefits ul {
-  padding-left: 650px;
   text-align: left;
 }
 
 ul li {
-  line-height: 3;
+  line-height: 2;
+  text-align: left;
 }
 
 .comment {
@@ -99,7 +110,7 @@ ul li {
   font-weight: lighter;
   font-style: italic;
   margin: auto;
-  width: 25%;
+  width: 50%;
 }
 
 span {
@@ -128,8 +139,10 @@ span {
 footer {
   background-color: #121212;
   height: 300px;
-  display: grid;
   padding: 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 footer h1 {
